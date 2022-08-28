@@ -12,13 +12,10 @@ const refs = {
     spanSeconds: document.querySelector('[data-seconds]'),
 }
 
-
-
-
 refs.btn.addEventListener('click', onClickBtn);
 
 let selectedDate = null;
- refs.btn.disabled = true;
+refs.btn.disabled = true;
 
 const options = {
   enableTime: true,
@@ -59,8 +56,6 @@ const timer = {
 
         }, 1000)
     },
-
- 
 };
 
 function onClickBtn(event) {
@@ -99,7 +94,7 @@ function convertMs(ms) {
 
 
 
-console.log(refs.inputForm);
+// console.log(refs.inputForm);
 
 
 
