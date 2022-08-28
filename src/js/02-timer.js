@@ -14,7 +14,7 @@ const refs = {
 
 
 
-refs.inputForm.addEventListener('input', onInputDate);
+
 refs.btn.addEventListener('click', onClickBtn);
 
 let selectedDate = null;
@@ -29,8 +29,10 @@ const options = {
         selectedDate = selectedDates[0].getTime();
         if (selectedDate < Date.now()) {
             Notiflix.Notify.failure("Please choose a date in the future");
-       }
-        refs.btn.disabled = false;
+        } else {
+            refs.btn.disabled = false;
+        }
+       
     console.log(selectedDates[0]);
   },
 };
@@ -40,7 +42,6 @@ const timer = {
   
     start() {
        
-      
         const intervalId = setInterval(() => {
             const startTime = Date.now();
             const deltaTime = selectedDate - startTime;
@@ -100,7 +101,5 @@ function convertMs(ms) {
 
 console.log(refs.inputForm);
 
-function onInputDate(event) {
 
-}
 
