@@ -37,10 +37,10 @@ img {
   margin-right: 0;
 }
 .value {
-  color: rgb(255, 217, 0);
+  color: blue;
   text-align: center;
 }
 
 .label {
-  color: blue;
+  color: rgb(255, 217, 0);
 }
